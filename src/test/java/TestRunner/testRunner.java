@@ -21,7 +21,9 @@ public class testRunner {
 }
 
 @CucumberOptions(features = "src/test/FeatureFiles/login.feature",
-glue = "StepDefinitions")
+glue = "StepDefinitions",
+        plugin = {"pretty", "html:target/cucumber-html-reports", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+        })
 class login extends AbstractTestNGCucumberTests{
 
 }
