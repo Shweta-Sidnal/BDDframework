@@ -4,7 +4,7 @@ import io.cucumber.testng.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class testRunner {
+public class TestRunner {
     TestNGCucumberRunner testNGcucumberRunner;
 
     @Test(dataProvider ="login")
